@@ -1,0 +1,33 @@
+{
+  "name": "rrinfotech-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "email-templates": "^8.0.8",
+    "express": "^4.17.2",
+    "fs-extra": "^10.0.0",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.2",
+    "mssql": "^7.3.0",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^2.0.19",
+    "numeral": "^2.0.6",
+    "path": "^0.12.7",
+    "to-words": "^3.0.1",
+    "util": "^0.12.4"
+  }
+}
