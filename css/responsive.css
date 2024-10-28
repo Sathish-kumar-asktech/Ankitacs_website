@@ -232,8 +232,8 @@ margin-top: 200px;
     .logo {
         float: left;
         border: inherit;
-        margin-top: 83px !important;
-        margin-left: 120px;
+        /* margin-top: 83px !important;
+        margin-left: 120px; */
     }
     .imagess{
         margin-left: 200px;

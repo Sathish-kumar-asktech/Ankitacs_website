@@ -1,0 +1,117 @@
+@import url("https://css.gg/css");
+
+h1 {
+  color: #ddd;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+p {
+  color: #151515;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: capitalize !important;
+}
+
+.Marquees {
+  overflow-x: hidden;
+}
+
+.Marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200vw;
+  height: 13vh;
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff00;
+  height: 11vh;
+  width: 12.5vw; /* This should divide 200vw by the number of items */
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.marquee:hover {
+  background: #1d1d1d02;
+}
+
+.icon {
+  color: #ccc;
+  transform: scale(1);
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+.icon {
+  color: #ccc;
+  transform: scale(1);
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+}
+
+
+.FirstRow {
+  animation: Scroll 20s linear infinite;
+}
+
+.SecondRow {
+  animation: Scroll 20s linear infinite;
+  animation-direction: reverse;
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    -webkit-transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(50vw);
+    -webkit-transform: translateX(50vw);
+  }
+}
+
+
+hr.hr-text {
+  position: relative;
+    border: none;
+    height: 1px;
+    background: #999;
+    color: black;
+}
+
+hr.hr-text::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #999;
+    border-radius: 30rem;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

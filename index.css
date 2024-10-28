@@ -1,0 +1,462 @@
+.product-image {
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.product-image-card {
+  min-height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  mix-blend-mode: multiply;
+}
+
+.cart-card {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-left: 10px;
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  /* Smooth rotation of the icon */
+}
+
+.submenu {
+  margin-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.dropdown-submenu.open .dropdown-icon i {
+  transform: rotate(-180deg);
+  /* Rotate the icon when submenu is open */
+}
+
+.category-menu {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-menu h4 {
+  margin-bottom: 15px;
+}
+
+.category-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-menu ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.category-menu ul li a:hover {
+  color: #007bff;
+}
+
+.category-menu {
+  margin-top: 15px;
+}
+
+.category-item {
+  margin-bottom: 10px;
+}
+
+.category-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.category-item a:hover {
+  color: #007bff;
+  /* Change color on hover */
+}
+
+.card-title2 {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.logo img {
+  height: auto;
+  width: 180px;
+  background-color: white;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+.header-bg {
+  background-color: white !important;
+}
+
+.scroll-card {
+  max-height: 60vh !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.shadow-bottom-header {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Modify the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebeff361;
+  /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4379f2; /* Thumb color */
+  /* border-radius: 10px;  */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-height: 10px;
+}
+
+/* Hover effect for the vertical scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4379f2;
+  /* cursor: all-scroll; */
+}
+
+.count-position {
+  position: absolute;
+  left: 49px;
+  background-color: lawngreen;
+  color: black !important;
+}
+
+/* Sidebar styles */
+#mySidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#mySidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+#mySidebar a:hover {
+  background-color: #575757;
+}
+#mySidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Menu button */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Overlay when sidebar is open */
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* //side bar  */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.open-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollable-products::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each product card */
+.product-card {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Each product card */
+.product-card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Ellipsis for product description */
+.product-description {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: small;
+}
+
+/* Ellipsis for product description */
+.product-description2 {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: small;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Scroll arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(29, 98, 88, 0.797);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scrollable-wrapper {
+  display: flex;
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+.scrollable-products {
+  display: flex; /* Display products in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  cursor: grab; /* Change cursor to grab */
+  padding: 10px; /* Add some padding */
+  gap: 10px; /* Space between product cards */
+}
+
+.scrollable-products:active {
+  cursor: grabbing; /* Change cursor to grabbing when active */
+}
+
+.scroll-arrow {
+  background: #fff; /* Background for arrows */
+  border: none;
+  cursor: pointer; /* Pointer cursor */
+}
+
+.bannerslide1 {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  transition: all 0.3s ease;
+}
+
+.customerslide1 {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.bannerslide1:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.about-section {
+  padding: 50px 0;
+}
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.values {
+  list-style-type: none;
+  padding: 0;
+}
+.values li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #152f4f;
+  color: white;
+}
+
+.footer .links ul {
+  list-style-type: none;
+}
+
+.footer .links li a {
+  color: white;
+  transition: color 0.2s;
+}
+
+.footer .links li a:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
+
+.footer .about-company i {
+  font-size: 25px;
+}
+
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+
+.footer .about-company a:hover {
+  color: #4180cb;
+}
+
+.footer .location i {
+  font-size: 18px;
+}
+
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.desgn-cart-1 {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16);
+  padding: 10px;
+  margin: 10px;
+  min-height: 255px;
+}
+
+.toast {
+  min-width: 250px;
+  z-index: 99999;
+}
+
+#toast-body {
+  color: white !important;
+}

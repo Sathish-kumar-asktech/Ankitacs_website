@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Enquiry | Ankitha Computer & Stationer</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./slide.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/ankita/acs.png" type="image/jpg" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/99dfc7b512.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/ankita/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="images/ankita/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/ankita/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/ankita/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/ankita/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="images/ankita/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="images/ankita/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="images/ankita/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/ankita/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="images/ankita/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/ankita/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="images/ankita/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/ankita/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <!-- body -->
+  <body class="main-layout footer_to90 contact_page">
+    <!-- loader  -->
+    <div class="loader_bg" id="loader">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- Top Bar -->
+    <div class="bg-dark text-white py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-sm-12 text-md-end text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item text-white">
+                <a href="tel:+918041499261" class="text-white">
+                  <i class="fa-solid fa-phone"></i> Call us: +91 804 149 9261,
+                </a>
+              </li>
+              <li class="list-inline-item ms-3 text-white">
+                <a href="mailto:sales@ankitacs.com" class="text-white">
+                  <i class="fa-regular fa-envelope"></i>
+                  sales@ankitacs.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 text-md-start text-center mt-2 mt-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-facebook text-white"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter text-white"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-linkedin text-white"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram text-white"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="sticky-top shadow-bottom-header">
+      <!-- Logo and Navigation with Row & Col -->
+      <div class="header-bg py-1">
+        <div class="container-fluid">
+          <!-- Full width container -->
+          <div class="row align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="col-6 col-md-2 text-start">
+              <a href="index.html" class="logo my-1">
+                <img
+                  src="images/ankita/acs3.png"
+                  alt="ACS Logo"
+                  class="img-fluid"
+                  style="max-height: 70px"
+                />
+              </a>
+            </div>
+
+            <div class="col-6 col-md-10 d-flex justify-content-end">
+              <nav class="navbar navbar-expand-lg navbar-dark text-primary">
+                <a href="cart.html" class="logo my-1 d-block d-lg-none">
+                  <div>
+                    <img
+                      src="images/ankita/cart.png"
+                      alt="ACS Logo"
+                      class="img-fluid"
+                      style="max-height: 50px"
+                    />
+                    <span class="badge badge-dark count-position" id="cartCount"
+                      >0</span
+                    >
+                  </div>
+                </a>
+                <a
+                  onclick="openNav()"
+                  class="logo my-1 d-block d-lg-none"
+                  style="cursor: pointer"
+                >
+                  <div>
+                    <img
+                      src="images/ankita/hamburger.png"
+                      alt="ACS Logo"
+                      class="img-fluid"
+                      style="max-height: 50px"
+                    />
+                  </div>
+                </a>
+                <!-- Navbar links for larger screens -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link fw-bold text-info-emphasis"
+                        href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link fw-bold text-info-emphasis"
+                        href="about.html"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item active dropdown">
+                      <a
+                        class="nav-link dropdown-toggle fw-bold text-info-emphasis"
+                        href="http://example.com"
+                        id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Products
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        id="maincategory"
+                        aria-labelledby="navbarDropdownMenuLink"
+                      >
+                        <ul class="dropdown-menu"></ul>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link fw-bold text-info-emphasis"
+                        href="contact.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link fw-bold text-info-emphasis"
+                        href="images/ankita/ACS.pdf"
+                        >Brochure</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link fw-bold text-info-emphasis"
+                        href="enquiryus.html"
+                        >Enquiry</a
+                      >
+                    </li>
+
+                    <li class="nav-item ml-4">
+                      <a class="" href="cart.html">
+                        <button type="button" class="btn btn-primary">
+                          Cart
+                          <span class="badge badge-dark" id="cartCount2"
+                            >0</span
+                          >
+                        </button>
+                      </a>
+                    </li>
+
+                    <li class="nav-item px-3">
+                      <a
+                        href="http://3.109.148.179/PoGenerator_Indent/"
+                        target="_blank"
+                        class="btn btn-warning fw-bold"
+                        >Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Sidebar and content -->
+                <div id="mySidebar" class="sidebar">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <div class="nav-item">
+                    <a
+                      class="nav-link collapsed"
+                      data-bs-toggle="collapse"
+                      href="#productDropdown"
+                      aria-expanded="false"
+                      aria-controls="productDropdown"
+                    >
+                      <span>Products</span>
+                      <i class="fa-solid fa-caret-down"></i>
+                      <i class="bi bi-caret-down-fill"></i>
+                      <!-- Bootstrap dropdown icon -->
+                    </a>
+                    <div id="productDropdown" class="collapse">
+                      <div class="accordion" id="categoryAccordion">
+                        <ul
+                          id="sidebar-category-list"
+                          class="list-unstyled"
+                        ></ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="contact.html">Contact Us</a>
+                  <a href="enquiryus.html">Enquiry</a>
+                  <a href="images/RR Brochure.pdf">Brochure</a>
+                  <a href="cart.html"
+                    >Cart
+                    <span class="badge bg-secondary" id="cartCount">0</span></a
+                  >
+                  <a
+                    href="http://3.109.148.179/PoGenerator_Indent/"
+                    target="_blank"
+                    >Login</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- contact section -->
+    <div id="contact" class="contact">
+      <div class="con_bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1 main_form">
+              <div>
+                <h1 style="color: #dc7700" class="text-center mb-5">Enquiry</h1>
+              </div>
+              <div class="row" style="margin-top: -10px">
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    class="contactus"
+                    autocomplete="off"
+                    placeholder="Name"
+                    required
+                    id="Name1"
+                    type="type"
+                    name="Name"
+                  />
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    class="contactus"
+                    autocomplete="off"
+                    placeholder="Phone Number"
+                    maxlength="10"
+                    required
+                    id="phnum1"
+                    type="text"
+                    pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                    name="Phone Number"
+                  />
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    class="contactus"
+                    autocomplete="off"
+                    placeholder="Email"
+                    required
+                    id="email1"
+                    type="type"
+                    name="Email"
+                  />
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <input
+                    class="contactus"
+                    autocomplete="off"
+                    placeholder="Address"
+                    required
+                    id="address1"
+                    type="type"
+                    name="Address"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <textarea
+                    name=""
+                    id="message1"
+                    autocomplete="off"
+                    class="contactusmess"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button class="send_btn" onclick="getUsers()">
+                    Send Enquiry
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-lg-4 col-xs-12 about-company text-center">
+              <h4 class="mt-lg-0 mt-sm-3 text-center">Address</h4>
+              <h6 class="text-center">ANKITA COMPUTER & STATIONERS</h6>
+              <p class="text-white-50 text-center">
+                40, 14th Cross, 2nd Main, Sampangiram Nagar, Bangalore - 560027
+              </p>
+            </div>
+            <div class="col-lg-2 col-xs-12 links text-center">
+              <h4 class="mt-lg-0 mt-sm-3 text-start">Links</h4>
+
+              <ul class="m-0 p-0 text-start">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="enquiryus.html">Enquiry</a></li>
+                <li>
+                  <a href="images/ankita/ACS.pdf" target="_blank">Brochure</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Contact</h4>
+              <p class="mb-0">
+                <i class="fa fa-phone mr-3"></i>+91 80 4149 9261
+              </p>
+              <p>
+                <i class="fa fa-envelope-o mr-3 text-lowercase"></i
+                ><span class="text-lowercase">ankitacompu@yahoo.com</span>
+              </p>
+            </div>
+            <div class="col-lg-2 col-xs-12 location">
+              <h4 class="mt-lg-0 mt-sm-4">Find Us On</h4>
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-facebook text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-twitter text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-linkedin text-white"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="fa fa-instagram text-white"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-center mt-4" style="font-size: small; color: #fafafa">
+            © Copyright 2024. Ankita Computers & Stationers. All rights
+            reserved. | Designed and developed by
+            <a
+              href="https://asktek.net/"
+              target="_blank"
+              style="text-decoration: none; color: skyblue"
+              >ASK Technologies</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      const tokent =
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ";
+
+      function updateCartCount() {
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+        const cartCount = cart.length;
+        document.getElementById("cartCount").textContent = cartCount;
+        document.getElementById("cartCount2").textContent = cartCount;
+      }
+
+      // Call this function to update the cart count on page load
+      updateCartCount();
+
+      const getUsers = async () => {
+        const name = document.getElementById("Name1").value;
+        const phone = document.getElementById("phnum1").value;
+        const email = document.getElementById("email1").value;
+        const message = document.getElementById("message1").value;
+        const address = document.getElementById("address1").value;
+
+        // Validate required fields
+        if (name && phone && email && message) {
+          // Show loader
+          document.getElementById("loader").style.display = "block";
+
+          try {
+            const response = await axios.post(
+              "http://targettest.asktek.net/target.ankita.adminpanel.webapi/api/EmailOnEnquiryForm",
+
+              {
+                name: name,
+                phone: phone,
+                email: email,
+                address: address,
+                message: message,
+              },
+              {
+                headers: {
+                  Authorization: tokent,
+                },
+              }
+            );
+
+            console.log(`Email Response:`, response.data);
+
+            // Clear input fields on successful submission
+            document.getElementById("Name1").value = "";
+            document.getElementById("phnum1").value = "";
+            document.getElementById("email1").value = "";
+            document.getElementById("message1").value = "";
+            document.getElementById("address1").value = "";
+            document.getElementById("loader").style.display = "none";
+            Swal.fire("Email!", "Email Sent Successfully", "success");
+          } catch (error) {
+            console.error("Error sending email:", error);
+            document.getElementById("loader").style.display = "none";
+            Swal.fire(
+              "Error!",
+              "Failed to send email. Please try again.",
+              "error"
+            );
+          }
+        } else {
+          // Alert user for missing fields
+          if (!name) alert("Please enter your name.");
+          if (!phone) alert("Please enter your contact number.");
+          if (!email) alert("Please enter your email.");
+          if (!message) alert("Please enter your message.");
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tokent2 =
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ";
+
+      const api_url =
+        "http://targettest.asktek.net/target.ankita.adminpanel.webapi/api/GetallActiveMainCategory";
+
+      // Defining async function
+      async function getapi(url) {
+        // Storing response
+        const response = await fetch(url, {
+          headers: {
+            Authorization: tokent2,
+          },
+        });
+
+        // Storing data in form of JSON
+        var data = await response.json();
+        console.log(data);
+
+        show(data);
+      }
+
+      // Calling that async function
+      getapi(api_url);
+
+      function show(data) {
+        let tab = `<ul class="dropdown-menu" id="maincategory" aria-labelledby="navbarDropdownMenuLink">
+         <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" ></a>
+            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Copier Paper</a></li>
+                                              <li><a class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Pens</a></li>
+                                              <li><a class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Markers</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Pencil &amp; Erasers</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Stapler,Pins &amp; Punching Machines</a></li>
+                                              <li><a class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Paste Items</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Note Books/Registers</a></li>
+                                              <li><a class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Envelopes</a></li>
+                                              <li><a  class="dropdown-item"  target="_blank" href="images/ListOfStationery.pdf">Files &amp; Folders</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Calculators</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Clips &amp; Pins</a></li>
+                                              <li><a  class="dropdown-item" target="_blank" href="images/ListOfStationery.pdf">Other Stationeries</a></li>
+
+                                          </ul>
+        
+         <li>
+         </ul>`;
+
+        for (const r of data) {
+          tab += `<li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" value=${r.MainCategory_Id} onmouseover="getsubmenu(${r.MainCategory_Id})" >${r.MainCategory_Description}</a>
+         <ul class="dropdown-menu" id="sucategory${r.MainCategory_Id}">
+                                            
+                                          </ul>
+   
+         </li>
+      </ul>`;
+        }
+        console.log(data, "test");
+        // Setting innerHTML as tab variable
+        document.getElementById("maincategory").innerHTML = tab;
+      }
+
+      const getsubmenu = async (id) => {
+        await axios
+          .get(
+            `http://targettest.asktek.net/target.ankita.adminpanel.webapi/api/Getonesub/${id}`,
+            {
+              headers: {
+                Authorization: tokent2,
+              },
+            }
+          )
+          .then((res) => {
+            console.log(res.data, "datas");
+
+            let tab = ``;
+            for (const r of res.data) {
+              tab += ` <li><a class="dropdown-item" href="products.html" onclick="productid(${r.Category_Id})" >${r.Category_Description}</a></li>`;
+            }
+
+            // Setting innerHTML as tab variable
+            document.getElementById(`sucategory${id}`).innerHTML = tab;
+          });
+      };
+
+      const productid = (id) => {
+        sessionStorage.setItem("productid", id);
+      };
+      function updateCartCount() {
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || []; // Retrieve cart from localStorage, or default to an empty array
+        const cartCount = cart.length; // Get the length of the cart
+
+        // Update the cart count in the navbar
+        document.getElementById("cartCount").textContent = cartCount;
+      }
+
+      // Call this function to update the cart count on page load
+      updateCartCount();
+    </script>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+      const tokent3 =
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ";
+
+      const api_url2 =
+        "http://targettest.asktek.net/target.ankita.adminpanel.webapi/api/GetallActiveMainCategory";
+
+      // Fetch categories and render them in the sidebar
+      async function getCategories(url) {
+        const response = await fetch(url, {
+          headers: {
+            Authorization: tokent3,
+          },
+        });
+        const data = await response.json();
+        renderCategories(data);
+      }
+
+      // Function to render categories and their subcategories
+      function renderCategories(data) {
+        let categoryHTML = "";
+
+        data.forEach((category) => {
+          categoryHTML += `
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-toggle="collapse" href="#category-${category.MainCategory_Id}" aria-expanded="false" aria-controls="category-${category.MainCategory_Id}">
+          ${category.MainCategory_Description} <i class="fa-solid fa-caret-down"></i>
+          <i class="bi bi-caret-right-fill"></i> <!-- Icon for each category -->
+        </a>
+        <div id="category-${category.MainCategory_Id}" class="collapse" data-bs-parent="#categoryAccordion">
+          <ul class="list-unstyled" id="subcategory-${category.MainCategory_Id}"></ul>
+        </div>
+      </li>`;
+        });
+
+        document.getElementById("sidebar-category-list").innerHTML =
+          categoryHTML;
+
+        // Load subcategories for each category
+        data.forEach((category) => loadSubcategories(category.MainCategory_Id));
+      }
+
+      // Function to fetch subcategories based on category ID
+      async function loadSubcategories(categoryId) {
+        const response = await axios.get(
+          `http://targettest.asktek.net/target.ankita.adminpanel.webapi/api/Getonesub/${categoryId}`,
+          {
+            headers: {
+              Authorization: tokent3,
+            },
+          }
+        );
+        const subcategories = response.data;
+        let subcategoryHTML = "";
+        subcategories.forEach((subcategory) => {
+          subcategoryHTML += `<li><a class="dropdown-item" href="products.html" onclick="selectProduct(${subcategory.Category_Id})">${subcategory.Category_Description} </a></li>`;
+        });
+
+        document.getElementById(`subcategory-${categoryId}`).innerHTML =
+          subcategoryHTML;
+      }
+
+      // Function to store selected product ID in sessionStorage and redirect
+      function selectProduct(subcategoryId) {
+        sessionStorage.setItem("productid", subcategoryId);
+        window.location.href = "products.html"; // Redirect to products page
+      }
+
+      // Initialize categories on page load
+      getCategories(api_url2);
+
+      // Function to update cart count
+      function updateCartCount() {
+        const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+        document.getElementById("cartCount").textContent = cart.length;
+      }
+
+      updateCartCount();
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>
